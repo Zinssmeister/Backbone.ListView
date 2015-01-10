@@ -27,4 +27,4 @@ var contactsListView  = new Backbone.ListView({
 $('#list-wrapper').html(contactsListView.render().el);
 
 ```
-Demo: [http://jsfiddle.net/zinssmeister/tsd91a26/](http://jsfiddle.net/zinssmeister/tsd91a26/)
+Demo: [http://jsfiddle.net/zinssmeister/tsd91a26/1/](http://jsfiddle.net/zinssmeister/tsd91a26/1/)
