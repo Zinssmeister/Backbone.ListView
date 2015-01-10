@@ -13,6 +13,11 @@ var contacts = new Backbone.Collection([
 
 var ContactsListItemView = Backbone.ListItemView.extend({
   template: HandlebarsTemplates['contacts']
+  
+  // The template would maybe look like so:
+  // <span>{{name}}</span><span>{{age}}</span>
+  //
+
 });
 
 var contactsListView  = new Backbone.ListView({ 
