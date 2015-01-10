@@ -3,8 +3,6 @@ A general purpose ListView for Backbone.js that makes building lists of views fa
 
 Example:
 
-http://jsfiddle.net/zinssmeister/tsd91a26/
-
 ```javascript
 
 var contacts = new Backbone.Collection([
@@ -29,3 +27,4 @@ var contactsListView  = new Backbone.ListView({
 $('#list-wrapper').html(contactsListView.render().el);
 
 ```
+Demo: [http://jsfiddle.net/zinssmeister/tsd91a26/](http://jsfiddle.net/zinssmeister/tsd91a26/)
