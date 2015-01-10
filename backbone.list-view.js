@@ -52,7 +52,6 @@ Backbone.ListView = Backbone.View.extend({
 *   Functions as a blueprint that actual ItemViews can inherit from
 */
 Backbone.ListItemView = Backbone.View.extend({
-  template: HandlebarsTemplates[''],
   tagName: 'li',
   initialize: function(options){
     this.listenTo(this.model, 'remove', this.remove);
