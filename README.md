@@ -3,21 +3,22 @@ A general purpose ListView for Backbone.js that makes building lists of views fa
 
 Example:
 
+http://jsfiddle.net/zinssmeister/tsd91a26/
+
 ```javascript
 
 var contacts = new Backbone.Collection([
-  {name: "Tim", age: 5},
-  {name: "Ida", age: 26},
-  {name: "Rob", age: 55}
+    {name: "Tim Schneider", age: 35},
+    {name: "John Black", age: 26}
 ]);
 
 var ContactsListItemView = Backbone.ListItemView.extend({
-  template: HandlebarsTemplates['contacts']
-  
-  // The template would maybe look like so:
-  // <span>{{name}}</span><span>{{age}}</span>
-  //
-
+    render: function(){
+        var compiled = _.template("<%= name %>, <%= age %> years old");
+        var html = compiled(this.model.toJSON());
+        this.$el.html(html);
+        return this;
+    }
 });
 
 var contactsListView  = new Backbone.ListView({ 
