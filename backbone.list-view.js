@@ -7,6 +7,9 @@ Backbone.ListView = Backbone.View.extend({
     this.itemView     = options.itemView;
     this.itemViews    = [];
 
+    this.eventBinder();
+  },
+  eventBinder: function(){
     //Events
     this.listenTo(this.collection, 'add', this.render);
     this.listenTo(this.collection, 'reset', this.render);
